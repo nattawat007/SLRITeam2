@@ -24,71 +24,90 @@ export default class SideBar extends Component {
     return (
 
               <Container>
-                <Content style={{backgroundColor:'#b1cef1'}}>
-                <Image source={require('../public/slri.png')}
+                <Content style={{backgroundColor:'#FFF'}}>
+                <Image source={require('../public/slri.jpg')}
                 style={{ width:'100%', height: 200}}/>
                     <ListItem icon>
-                        <Left>
-                            <Icon name="mail" />
-                        </Left>
                         <Body>
-                          <Text>News</Text>
+                          <Text>Beamline 1.1</Text>
                         </Body>
                         <Right>
-                          <Badge>
-                              <Text>5</Text>
-                          </Badge>
-                        </Right>
-                    </ListItem>
-                    <ListItem icon>
-                        <Left>
-                            <Icon name="star" />
-                        </Left>
-                        <Body>
-                          <Text>About</Text>
-                        </Body>
-                        <Right>
-                          <Badge>
-                              <Text>5</Text>
-                          </Badge>
-                        </Right>
-                    </ListItem>
-                    <ListItem icon>
-                        <Left>
-                            <Icon name="resize" />
-                        </Left>
-                        <Body>
-                          <Text>Beamline</Text>
-                        </Body>
-                        <Right>
-                          <Badge>
-                              <Text>8</Text>
-                          </Badge>
-                        </Right>
-                    </ListItem>
-                    <ListItem icon>
-                        <Left>
-                            <Icon name="aperture" />
-                        </Left>
-                        <Body>
-                          <Text>Accelerator</Text>
-                        </Body>
-                        <Right>
-                            <Switch value={false} />
-                        </Right>
-                    </ListItem>
-                    <ListItem icon>
-                        <Left>
-                            <Icon name="heart" />
-                        </Left>
-                        <Body>
-                          <Text>Contact Us</Text>
-                        </Body>
-                        <Right>
-                            <Text>GeekyAnts</Text>
                             <Icon name="arrow-forward" />
                         </Right>
                     </ListItem>
+                    <ListItem icon>
+                        <Body>
+                          <Text>Beamline 1.2</Text>
+                        </Body>
+                        <Right>
+                            <Icon name="arrow-forward" />
+                        </Right>
+                    </ListItem>
+                    <ListItem icon>
+                        <Body>
+                          <Text>Beamline 1.3</Text>
+                        </Body>
+                        <Right>
+                            <Icon name="arrow-forward" />
+                        </Right>
+                    </ListItem>
+                    <ListItem icon>
+                        <Body>
+                          <Text>Beamline 2</Text>
+                        </Body>
+                        <Right>
+                            <Icon name="arrow-forward" />
+                        </Right>
+                    </ListItem>
+                    <ListItem icon>
+                        <Body>
+                          <Text>Beamline 3</Text>
+                        </Body>
+                        <Right>
+                            <Icon name="arrow-forward" />
+                        </Right>
+                    </ListItem>
+                    <ListItem icon>
+                        <Body>
+                          <Text>Beamline 4</Text>
+                        </Body>
+                        <Right>
+                            <Icon name="arrow-forward" />
+                        </Right>
+                    </ListItem>
+                    <ListItem icon>
+                        <Body>
+                          <Text>Beamline 5</Text>
+                        </Body>
+                        <Right>
+                            <Icon name="arrow-forward" />
+                        </Right>
+                    </ListItem>
+                    <ListItem icon>
+                        <Body>
+                          <Text>Beamline 6</Text>
+                        </Body>
+                        <Right>
+                            <Icon name="arrow-forward" />
+                        </Right>
+                    </ListItem>
+                    <ListItem icon>
+                        <Body>
+                          <Text>Beamline 7</Text>
+                        </Body>
+                        <Right>
+                            <Icon name="arrow-forward" />
+                        </Right>
+                    </ListItem>
+                    <ListItem icon>
+                        <Body>
+                          <Text>Beamline 8</Text>
+                        </Body>
+                        <Right>
+                            <Icon name="arrow-forward" />
+                        </Right>
+                    </ListItem>
+
                   </Content>
                 </Container>
 
