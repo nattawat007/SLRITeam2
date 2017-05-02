@@ -10,6 +10,7 @@ import {
   Text
 } from 'native-base'
 
+import { StackNavigator } from 'react-navigation';
 
 export default class SynFooter extends Component{
   render() {
@@ -20,9 +21,12 @@ export default class SynFooter extends Component{
                     <Icon name="star" />
                       <Text> Event </Text>
                 </Button>
-                <Button>
+                <Button
+                  onPress={() => this.props.StackNavigator.navigate('Alarm', { user: 'Lucy' })}
+                  title="Alarm"
+                active>
                     <Icon name="alarm" />
-                      <Text> Event </Text>
+                      <Text> Alarm   </Text>
                 </Button>
               <Button>
                   <Icon name="apps" />

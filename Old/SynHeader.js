@@ -27,7 +27,7 @@ export default class SynHeader extends Component{
             </Button>
          </Left>
          <Body>
-            <Text style={{color:'#FFF'}}>Beamline 1.1</Text>
+            <Text style={{color:'#FFF'}}>{this.props.title}</Text>
          </Body>
       </Header>
     );

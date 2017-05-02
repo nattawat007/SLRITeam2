@@ -1,30 +1,59 @@
 import React, { Component } from 'react'
-import {
-  Image,
-  ScrollView
-} from 'react-native'
+// Packages Components
 import {
   Container,
-  Content,
-  List,
-  ListItem,
+  Button,
   Text,
-  Body,
+  Content,
+  Header,
   Left,
   Right,
-  Thumbnail
+  Body,
+  Icon,
+  Footer,
+  FooterTab
 } from 'native-base';
 
-import { Col, Row, Grid } from 'react-native-easy-grid';
-
-export default class SynDashboard extends Component{
+export default class SynAlarm extends Component {
   render() {
+    const { navigate, state } = this.props.navigation;
     return (
           <Container>
-            <Content>
+                <Header>
+                   <Left>
+                   <Button
+                     transparent
+                     onPress={() => navigate('System')}
+                   >
+                         <Icon name='menu' />
+                      </Button>
+                   </Left>
+                   <Body>
+                      <Text style={{color:'#FFF'}}>{ state.params.title }</Text>
+                   </Body>
+                </Header>
+                <Container>
+                  <Content>
 
-            </Content>
-        </Container>
+                  </Content>
+                </Container>
+                <Footer>
+                    <FooterTab>
+                          <Button onPress={() => navigate('Event', { title: state.params.title, bl: state.params.bl })}>
+                              <Icon name="star" />
+                                <Text> Event </Text>
+                          </Button>
+                          <Button onPress={() => navigate('Alarm', { title: state.params.title, bl: state.params.bl })}>
+                              <Icon name="alarm" />
+                                <Text> Alarm   </Text>
+                          </Button>
+                        <Button active>
+                            <Icon name="apps" />
+                              <Text> Dashboard </Text>
+                        </Button>
+                    </FooterTab>
+                </Footer>
+          </Container>
     );
   }
 }

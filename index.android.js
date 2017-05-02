@@ -1,16 +1,9 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- * @flow
- */
-
-import React, { Component } from 'react';
+import React from 'react';
 import {
-  AppRegistry
+  AppRegistry,
+  Text,
 } from 'react-native';
 
-// App Component
 import App from './components/App'
-
 
 AppRegistry.registerComponent('SLRITeam2', () => App);
