@@ -16,17 +16,17 @@ export default class SynFooter extends Component{
     return (
       <Footer>
           <FooterTab>
-                <Button>
-                    <Icon name="apps" />
+                <Button active>
+                    <Icon name="star" />
+                      <Text> Event </Text>
                 </Button>
                 <Button>
-                    <Icon name="camera" />                  
+                    <Icon name="alarm" />
+                      <Text> Event </Text>
                 </Button>
-              <Button active>
-                  <Icon active name="navigate" />
-              </Button>
               <Button>
-                  <Icon name="person" />
+                  <Icon name="apps" />
+                    <Text> Dashboard </Text>
               </Button>
           </FooterTab>
       </Footer>

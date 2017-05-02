@@ -9,15 +9,15 @@ import {
 // Customize Components
 import SynHeader from './SynHeader'
 import SynFooter from './SynFooter'
-import SynEvent from './SynEvent'
+import SynAlarm from './SynAlarm'
 
 export default class App extends Component {
   render() {
     return (
              <Container>
                <SynHeader/>
-               <SynEvent/>
-               <SynFooter />
+               <SynAlarm/>
+               <SynFooter/>
              </Container>
     );
   }
